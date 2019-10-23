@@ -943,5 +943,23 @@ public class FileUtils {
         return fileDir.listFiles();
     }
 
+    /**
+     * 获取文件列表（包括子文件夹中的文件）
+     *
+     * @param fileList
+     * @param path
+     */
+    public static void getAllFiles(List<File> fileList, String path) {
+        File[] allFiles = new File(path).listFiles();
+        for (int i = 0; i < allFiles.length; i++) {
+            File file = allFiles[i];
+            if (file.isFile()) {
+                fileList.add(file);
+            } else {
+                getAllFiles(fileList, file.getAbsolutePath());
+            }
+        }
+    }
+
 
 }
