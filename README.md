@@ -38,3 +38,19 @@
 &nbsp; &nbsp;[StatusBarUtils_](https://github.com/CristianoLi/RTools/blob/master/RTools/StatusBarUtils_.java)
 
   状态栏工具类，两者对比取用
+
+* [AudioUtil](https://github.com/CristianoLi/RTools/blob/master/RTools/AudioUtil.java)
+
+  1、获取媒体库所有音频 2、获取asset目录下的音频文件。获取到的时长是毫秒，设置到结构中会转化成微妙
+
+* [ThreadPoolUtils](https://github.com/CristianoLi/RTools/blob/master/RTools/ThreadPoolUtils.java)
+
+  线程池辅助类，整个应用程序就只有一个线程池去管理线程等。
+
+* [TimeUtils](https://github.com/CristianoLi/RTools/blob/master/RTools/TimeUtils.java)
+
+  时间戳转换工具类
+
+* [SystemUtils](https://github.com/CristianoLi/RTools/blob/master/RTools/SystemUtils.java)
+
+  系统工具类（更新中...）
